@@ -1,0 +1,167 @@
+:: C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe
+C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe 
+-MMD -MP -MF ./obj/local/arm64-v8a/objs/main/main.o.d -target aarch64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE=2 -fno-exceptions -fno-rtti -fpic -O2 -DNDEBUG -Ijni -DANDROID -Wformat -Werror=format-security -c jni/main.cpp -o ./obj/local/arm64-v8a/objs/main/main.o,...)
+
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe,
+C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe 
+-Wl,--gc-sections -Wl,-rpath-link=C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/21 -Wl,-rpath-link=./obj/local/arm64-v8a ./obj/local/arm64-v8a/objs/main/main.o -latomic -target aarch64-none-linux-android21 -no-canonical-prefixes -Wl,--build-id=sha1 -Wl,--no-rosegment -stdlib=libstdc++ -Wl,--no-undefined -Wl,--fatal-warnings -lc -lm -o ./obj/local/arm64-v8a/main,...)
+
+
+C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe,
+>> C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -MMD -MP -MF ./obj/local/armeabi-v7a/objs/main/main.o.d -target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE=2 -fno-exceptions -fno-rtti -fpic -march=armv7-a -mthumb -Oz -DNDEBUG -Ijni -DANDROID -Wformat -Werror=format-security -c jni/main.cpp -o ./obj/local/armeabi-v7a/objs/main/main.o,...
+
+C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe
+>> C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -Wl,--gc-sections -Wl,-rpath-link=C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/16 -Wl,-rpath-link=./obj/local/armeabi-v7a ./obj/local/armeabi-v7a/objs/main/main.o -latomic -target armv7-none-linux-androideabi16 -no-canonical-prefixes -Wl,--build-id=sha1 -Wl,--no-rosegment -stdlib=libstdc++ -Wl,--no-undefined -Wl,--fatal-warnings -lc -lm -o ./obj/local/armeabi-v7a/main,...)
+
+
+C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\llvm-strip.exe
+>> C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe --strip-unneeded ./libs/armeabi-v7a/main,...)
+
+Live child 000002f6bcddf950 (libs/armeabi-v7a/main) PID 3258753796624 
+Reaping winning child 000002f6bcddf950 PID 3258753796624 
+Removing child 000002f6bcddf950 PID 3258753796624 from chain.
+    Successfully remade target file 'libs/armeabi-v7a/main'.
+    Considering target file 'libs/x86/main'.
+     File 'libs/x86/main' does not exist.
+      Considering target file 'obj/local/x86/main'.
+       File 'obj/local/x86/main' does not exist.
+        Considering target file 'obj/local/x86/objs/main/main.o'.
+         File 'obj/local/x86/objs/main/main.o' does not exist.
+          Pruning file 'jni/main.cpp'.
+          Pruning file 'jni/Android.mk'.
+          Pruning file 'C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../build/core/default-application.mk'.
+          Considering target file 'obj/local/x86/objs/main'.
+           File 'obj/local/x86/objs/main' does not exist.
+           Finished prerequisites of target file 'obj/local/x86/objs/main'.
+          Must remake target 'obj/local/x86/objs/main'.
+Creating temporary batch file C:\Users\leap1\AppData\Local\Temp\make15580-7.bat
+Batch file contents:
+	@echo off
+	md "obj\local\x86\objs\main" >NUL 2>NUL || rem
+CreateProcess(C:\Users\leap1\AppData\Local\Temp\make15580-7.bat,C:\Users\leap1\AppData\Local\Temp\make15580-7.bat,...)
+Putting child 000002f6bcddedf0 (obj/local/x86/objs/main) PID 3258753802816 on the chain.
+Live child 000002f6bcddedf0 (obj/local/x86/objs/main) PID 3258753802816 
+Reaping winning child 000002f6bcddedf0 PID 3258753802816 
+Cleaning up temp batch file C:\Users\leap1\AppData\Local\Temp\make15580-7.bat
+Removing child 000002f6bcddedf0 PID 3258753802816 from chain.
+          Successfully remade target file 'obj/local/x86/objs/main'.
+         Finished prerequisites of target file 'obj/local/x86/objs/main/main.o'.
+        Must remake target 'obj/local/x86/objs/main/main.o'.
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\prebuilt\windows-x86_64\bin\echo.exe,C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../prebuilt/windows-x86_64/bin/echo.exe [x86] "Compile++      :" "main <= main.cpp",...)
+Putting child 000002f6bcddeed0 (obj/local/x86/objs/main/main.o) PID 3258753801664 on the chain.
+Live child 000002f6bcddeed0 (obj/local/x86/objs/main/main.o) PID 3258753801664 
+[x86] Compile++      : main <= main.cpp
+Reaping winning child 000002f6bcddeed0 PID 3258753801664 
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe,C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -MMD -MP -MF ./obj/local/x86/objs/main/main.o.d -target i686-none-linux-android16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE=2 -fno-exceptions -fno-rtti -fPIC -O2 -DNDEBUG -Ijni -DANDROID -Wformat -Werror=format-security -mstackrealign -c jni/main.cpp -o ./obj/local/x86/objs/main/main.o,...)
+Live child 000002f6bcddeed0 (obj/local/x86/objs/main/main.o) PID 3258753799360 
+Reaping winning child 000002f6bcddeed0 PID 3258753799360 
+Removing child 000002f6bcddeed0 PID 3258753799360 from chain.
+        Successfully remade target file 'obj/local/x86/objs/main/main.o'.
+        Considering target file 'obj/local/x86'.
+         Finished prerequisites of target file 'obj/local/x86'.
+        No need to remake target 'obj/local/x86'.
+       Finished prerequisites of target file 'obj/local/x86/main'.
+      Must remake target 'obj/local/x86/main'.
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\prebuilt\windows-x86_64\bin\echo.exe,C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../prebuilt/windows-x86_64/bin/echo.exe [x86] "Executable     :" main,...)
+Putting child 000002f6bcddf2c0 (obj/local/x86/main) PID 3258753797920 on the chain.
+Live child 000002f6bcddf2c0 (obj/local/x86/main) PID 3258753797920 
+[x86] Executable     : main
+Reaping winning child 000002f6bcddf2c0 PID 3258753797920 
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe,C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -Wl,--gc-sections -Wl,-rpath-link=C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16 -Wl,-rpath-link=./obj/local/x86 ./obj/local/x86/objs/main/main.o -latomic -target i686-none-linux-android16 -no-canonical-prefixes -Wl,--build-id=sha1 -Wl,--no-rosegment -stdlib=libstdc++ -Wl,--no-undefined -Wl,--fatal-warnings -lc -lm -o ./obj/local/x86/main,...)
+Live child 000002f6bcddf2c0 (obj/local/x86/main) PID 3258753797920 
+Reaping winning child 000002f6bcddf2c0 PID 3258753797920 
+Removing child 000002f6bcddf2c0 PID 3258753797920 from chain.
+      Successfully remade target file 'obj/local/x86/main'.
+      Pruning file 'clean-installed-binaries'.
+      Considering target file 'libs/x86'.
+       File 'libs/x86' does not exist.
+       Finished prerequisites of target file 'libs/x86'.
+      Must remake target 'libs/x86'.
+Creating temporary batch file C:\Users\leap1\AppData\Local\Temp\make15580-8.bat
+Batch file contents:
+	@echo off
+	md "libs\x86" >NUL 2>NUL || rem
+CreateProcess(C:\Users\leap1\AppData\Local\Temp\make15580-8.bat,C:\Users\leap1\AppData\Local\Temp\make15580-8.bat,...)
+Putting child 000002f6bcddf2c0 (libs/x86) PID 3258753797920 on the chain.
+Live child 000002f6bcddf2c0 (libs/x86) PID 3258753797920 
+Reaping winning child 000002f6bcddf2c0 PID 3258753797920 
+Cleaning up temp batch file C:\Users\leap1\AppData\Local\Temp\make15580-8.bat
+Removing child 000002f6bcddf2c0 PID 3258753797920 from chain.
+      Successfully remade target file 'libs/x86'.
+     Finished prerequisites of target file 'libs/x86/main'.
+    Must remake target 'libs/x86/main'.
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\prebuilt\windows-x86_64\bin\echo.exe,C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../prebuilt/windows-x86_64/bin/echo.exe [x86] "Install        :" "main => libs/x86/main",...)
+Putting child 000002f6bcddf560 (libs/x86/main) PID 3258753801376 on the chain.
+Live child 000002f6bcddf560 (libs/x86/main) PID 3258753801376 
+[x86] Install        : main => libs/x86/main
+Reaping winning child 000002f6bcddf560 PID 3258753801376 
+Creating temporary batch file C:\Users\leap1\AppData\Local\Temp\make15580-9.bat
+Batch file contents:
+	@echo off
+	copy /b/y ".\obj\local\x86\main" ".\libs\x86\main" > NUL
+CreateProcess(C:\Users\leap1\AppData\Local\Temp\make15580-9.bat,C:\Users\leap1\AppData\Local\Temp\make15580-9.bat,...)
+Live child 000002f6bcddf560 (libs/x86/main) PID 3258753799216 
+Reaping winning child 000002f6bcddf560 PID 3258753799216 
+Cleaning up temp batch file C:\Users\leap1\AppData\Local\Temp\make15580-9.bat
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\llvm-strip.exe,C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe --strip-unneeded ./libs/x86/main,...)
+Live child 000002f6bcddf560 (libs/x86/main) PID 3258753801376 
+Reaping winning child 000002f6bcddf560 PID 3258753801376 
+Removing child 000002f6bcddf560 PID 3258753801376 from chain.
+    Successfully remade target file 'libs/x86/main'.
+    Considering target file 'libs/x86_64/main'.
+     File 'libs/x86_64/main' does not exist.
+      Considering target file 'obj/local/x86_64/main'.
+       File 'obj/local/x86_64/main' does not exist.
+        Considering target file 'obj/local/x86_64/objs/main/main.o'.
+         File 'obj/local/x86_64/objs/main/main.o' does not exist.
+          Pruning file 'jni/main.cpp'.
+          Pruning file 'jni/Android.mk'.
+          Pruning file 'C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../build/core/default-application.mk'.
+          Considering target file 'obj/local/x86_64/objs/main'.
+           File 'obj/local/x86_64/objs/main' does not exist.
+           Finished prerequisites of target file 'obj/local/x86_64/objs/main'.
+          Must remake target 'obj/local/x86_64/objs/main'.
+Creating temporary batch file C:\Users\leap1\AppData\Local\Temp\make15580-a.bat
+Batch file contents:
+	@echo off
+	md "obj\local\x86_64\objs\main" >NUL 2>NUL || rem
+CreateProcess(C:\Users\leap1\AppData\Local\Temp\make15580-a.bat,C:\Users\leap1\AppData\Local\Temp\make15580-a.bat,...)
+Putting child 000002f6bcdded80 (obj/local/x86_64/objs/main) PID 3258753801376 on the chain.
+Live child 000002f6bcdded80 (obj/local/x86_64/objs/main) PID 3258753801376 
+Reaping winning child 000002f6bcdded80 PID 3258753801376 
+Cleaning up temp batch file C:\Users\leap1\AppData\Local\Temp\make15580-a.bat
+Removing child 000002f6bcdded80 PID 3258753801376 from chain.
+          Successfully remade target file 'obj/local/x86_64/objs/main'.
+         Finished prerequisites of target file 'obj/local/x86_64/objs/main/main.o'.
+        Must remake target 'obj/local/x86_64/objs/main/main.o'.
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\prebuilt\windows-x86_64\bin\echo.exe,C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../prebuilt/windows-x86_64/bin/echo.exe [x86_64] "Compile++      :" "main <= main.cpp",...)
+Putting child 000002f6bcddf020 (obj/local/x86_64/objs/main/main.o) PID 3258753802816 on the chain.
+Live child 000002f6bcddf020 (obj/local/x86_64/objs/main/main.o) PID 3258753802816 
+[x86_64] Compile++      : main <= main.cpp
+Reaping winning child 000002f6bcddf020 PID 3258753802816 
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe,C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -MMD -MP -MF ./obj/local/x86_64/objs/main/main.o.d -target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE=2 -fno-exceptions -fno-rtti -fPIC -O2 -DNDEBUG -Ijni -DANDROID -Wformat -Werror=format-security -c jni/main.cpp -o ./obj/local/x86_64/objs/main/main.o,...)
+Live child 000002f6bcddf020 (obj/local/x86_64/objs/main/main.o) PID 3258753799360 
+Reaping winning child 000002f6bcddf020 PID 3258753799360 
+Removing child 000002f6bcddf020 PID 3258753799360 from chain.
+        Successfully remade target file 'obj/local/x86_64/objs/main/main.o'.
+        Considering target file 'obj/local/x86_64'.
+         Finished prerequisites of target file 'obj/local/x86_64'.
+        No need to remake target 'obj/local/x86_64'.
+       Finished prerequisites of target file 'obj/local/x86_64/main'.
+      Must remake target 'obj/local/x86_64/main'.
+CreateProcess(C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\prebuilt\windows-x86_64\bin\echo.exe,C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../prebuilt/windows-x86_64/bin/echo.exe [x86_64] "Executable     :" main,...)
+Putting child 000002f6bcddf950 (obj/local/x86_64/main) PID 3258753801664 on the chain.
+Live child 000002f6bcddf950 (obj/local/x86_64/main) PID 3258753801664 
+[x86_64] Executable     : main
+Reaping winning child 000002f6bcddf950 PID 3258753801664 
+
+
+
+:: x86
+C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe,
+>> C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -Wl,--gc-sections -Wl,-rpath-link=C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -Wl,-rpath-link=./obj/local/x86_64 ./obj/local/x86_64/objs/main/main.o -latomic -target x86_64-none-linux-android21 -no-canonical-prefixes -Wl,--build-id=sha1 -Wl,--no-rosegment -stdlib=libstdc++ -Wl,--no-undefined -Wl,--fatal-warnings -lc -lm -o ./obj/local/x86_64/main
+
+C:\Users\leap1\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\llvm-strip.exe
+>> C:/Users/leap1/AppData/Local/Android/Sdk/ndk/23.1.7779620/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe --strip-unneeded ./libs/x86_64/main,...)
+
+

@@ -1,0 +1,69 @@
+switch (regs.orig_rax)
+        {
+        case SYS_newfstatat:
+            if(entry_flag){
+                read_addr_into_buff(init_pid, regs.rsi, buffer, MAX_BUFFER_LEN);
+                fprintf(stdout, "SYS_newfstatat: %s\n", buffer);
+            }
+            entry_flag = !entry_flag;
+            break;
+
+        case SYS_fchmodat:
+            if(entry_flag){
+                read_addr_into_buff(init_pid, regs.rsi, buffer, MAX_BUFFER_LEN);
+                fprintf(stdout, "SYS_fchmodat: %s\n", buffer);
+            }
+            entry_flag = !entry_flag;
+            break;
+
+        case SYS_stat:
+            if(entry_flag){
+                read_addr_into_buff(init_pid, regs.rdi, buffer, MAX_BUFFER_LEN);
+                fprintf(stdout, "stat file_name: %s\n", buffer);
+            }
+            entry_flag = !entry_flag;
+
+        case SYS_fstat:
+            if(entry_flag){
+                fprintf(stdout, "stat fd: %lld\n", regs.rdi);
+            }
+            entry_flag = !entry_flag;
+        
+        case SYS_write:
+            if(entry_flag){
+                read_addr_into_buff(init_pid, regs.rsi, buffer, MAX_BUFFER_LEN);
+                fprintf(stdout, "WRITE: %s\n", buffer);
+            }
+            entry_flag = !entry_flag;
+            break;
+
+        case SYS_fork:
+            if(!entry_flag) fprintf(stdout, "FORK: %lu\n", regs.rax);
+            entry_flag = !entry_flag;
+            break;
+            
+        case SYS_clone:
+            if(!entry_flag) fprintf(stdout, "CLONE: %lu\n", regs.rax);
+            entry_flag = !entry_flag;
+            break;
+        
+        case SYS_statfs:
+            if(entry_flag){
+                read_addr_into_buff(init_pid, regs.rdi, buffer, MAX_BUFFER_LEN);
+                fprintf(stdout, "statfs: %s\n", buffer);
+            }
+            entry_flag = !entry_flag;
+            break;
+
+        case SYS_open:
+            if(entry_flag){
+                read_addr_into_buff(init_pid, regs.rdi, buffer, MAX_BUFFER_LEN);
+                fprintf(stdout, "OPEN: %s\n", buffer);
+            }
+            entry_flag = !entry_flag;
+            break;
+
+        default:
+            entry_flag = 1;
+            break;
+        }

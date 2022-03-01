@@ -1,0 +1,1 @@
+adb shell ps | adb shell grep %1

@@ -1,0 +1,1 @@
+adb shell cat /proc/%1/environ
